@@ -12,17 +12,21 @@
  }
 
 .flex-layout{
-    display:flex;
+    display:grid;
     gap:10px;
-    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
-    flex-grow: 1;
+    width: 100%;
+    max-width: 1200%;
 }
+
     
 .container{
     border: 10px;
+    border-radius: 5px;
     background-color: bisque;
-    width: 500px;
+    padding: 20px;
+    position: relative;
 
 }
 
